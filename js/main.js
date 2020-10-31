@@ -158,7 +158,7 @@ Table of Contents:
 			var seconds = Math.floor((t / 1000) % 60);
 			var minutes = Math.floor((t / 1000 / 60) % 60);
 			var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
-			var days = Math.floor(t / (1000 * 60 * 60 * 24));
+			var days = Math.floor(t / (1000 * 60 * 60 * 24));			
 			return {
 				'total': t,
 				'days': days,
@@ -214,7 +214,7 @@ Table of Contents:
 			var timeinterval = setInterval(updateClock, 1000);
 		}
 		// set your wedding date here
-		var deadline = 'August 18 2019 17:30:00 GMT+0300';
+		var deadline = 'August 14 2021 9:00:00 GMT+0200';
 		if (countdown){
 			initializeClock('timer', deadline);
 		}
@@ -247,13 +247,14 @@ Table of Contents:
 			$form.find('input').removeClass('error');
 			var formData = {
 				'name': $form.find('input#inputName').val(),
-				'friendName': $form.find('input#inputFriendName').val(),
-				'number': $form.find('input#inputNumber').val()
+				'with': $form.find('input#inputWith').val(),
+				'email': $form.find('input#inputEmail').val(),
+				'content': $form.find('input#inputContent').val()
 			};
 
 			$.ajax({
 				type: 'POST',
-				url: 'form.php',
+				url: 'alarty.github.io/mariagejg/form.php',
 				data: formData,
 				dataType: 'json',
 				encode: true,
@@ -265,8 +266,8 @@ Table of Contents:
 				} else {
 					if (data.errors.name) {
 						$('#inputName').addClass('error').after('<span class="error-msg">'+data.errors.name+'</span>');
-					} else if (data.errors.friendName) {
-						$('#inputFriendName').addClass('error').after('<span class="error-msg">'+data.errors.friendName+'</span>');
+					} else if (data.errors.with) {
+						$('#inputFriendName').addClass('error').after('<span class="error-msg">'+data.errors.with+'</span>');
 					}
 				}
 			});
