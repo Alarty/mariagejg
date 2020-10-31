@@ -251,24 +251,17 @@ Table of Contents:
 				'email': $form.find('input#inputEmail').val(),
 				'content': $form.find('input#inputContent').val()
 			};
-
 			$.ajax({
-				type: 'POST',
-				url: 'alarty.github.io/mariagejg/form.php',
+			    url: "https://formspree.io/xgepyywo",
+				method: 'POST',
 				data: formData,
 				dataType: 'json',
-				encode: true,
-			}).done(function(data) {
-				console.log(data);
-				if (data.success) {
+				success: function(data) {
 					$('.success-msg').html('');
-					$('.success-msg').html(data.message);
-				} else {
-					if (data.errors.name) {
-						$('#inputName').addClass('error').after('<span class="error-msg">'+data.errors.name+'</span>');
-					} else if (data.errors.with) {
-						$('#inputFriendName').addClass('error').after('<span class="error-msg">'+data.errors.with+'</span>');
-					}
+					$('.success-msg').html('Message envoyé, merci !');
+				},
+				error: function(err) {
+					$('#inputName').addClass('error').after('<span class="error-msg">Erreur dans le formulaire ou côté serveur, désolé '+err+'</span>');
 				}
 			});
 			e.preventDefault();
