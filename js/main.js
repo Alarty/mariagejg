@@ -55,14 +55,14 @@ Table of Contents:
 	Vivus.prototype.myremoveclass = function () {
 		this.el.classList.remove('finish');
 	}
-	var loaderSvg = new Vivus('my-svg', {
-		type: 'sync',
-		duration: 100,
-		file: './img/loader.svg',
-		start: 'autostart',
-		dashGap: 20,
-		forceRender: false
-	}, mycallback);
+	//var loaderSvg = new Vivus('my-svg', {
+	//	type: 'sync',
+	//	duration: 100,
+	//	file: './img/loader.svg',
+	//	start: 'autostart',
+	//	dashGap: 20,
+	//	forceRender: false
+	//}, mycallback);
 
 	/* 4. Navbar collapse
 	====================*/
