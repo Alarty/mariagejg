@@ -246,6 +246,7 @@ Table of Contents:
 			$form.find('.error-msg').remove();
 			$form.find('input').removeClass('error');
 			var formData = {
+				'answer': $form.find('input[name="answer"]:checked').val(),
 				'name': $form.find('input#inputName').val(),
 				'with': $form.find('input#inputWith').val(),
 				'email': $form.find('input#inputEmail').val(),

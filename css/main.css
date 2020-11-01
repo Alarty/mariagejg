@@ -476,7 +476,7 @@ a:hover {
 
 .form-group {
 	position: relative;
-	margin: 2.5rem 0 0;
+	margin: 1.5rem 0 0;
 }
 
 .form-group .control-label {
@@ -1477,5 +1477,11 @@ footer:before {
 
 .copyright {
 	padding-right: 20px;
+}
+
+
+
+.radiobutton{
+	margin: 0.5rem;
 }
 

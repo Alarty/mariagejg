@@ -334,11 +334,17 @@
 					<img src="img/rsvp-flower.png" class="parallax" alt="flower">
 				</div>
 				<div class="col-sm-12 col-md-8 align-self-center">
-					<h2 class="title">RSVP</h2>
-					<h6 class="text-uppercase font-weight-bold mb-0">Pourra tu venir ?</h6>
+					<h2 class="title">Réponse à l'invitation</h2>
 					<form id="rsvp-form" action="form.php" method="post">
 						<div class="row">
 							<div class="col-md-8 mb-3 m-md-0">
+								<h6 class="text-uppercase font-weight-bold mb-0">Pourras-tu venir ?</h6>
+								<div class="form-group">
+									<input type="radio" class="radiobutton" id="answerYes" name="answer" value="Oui" required>
+									<label for="answerYes">Oui</label>
+									<input type="radio" class="radiobutton" id="answerNo"  name="answer" value="Non" required>
+									<label for="answerNo">Non</label>
+								</div>
 								<div class="form-group">
 									<label class="control-label" for="inputName">Ton nom</label>
 									<input type="text" class="form-control" id="inputName" required>
