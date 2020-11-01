@@ -23,14 +23,14 @@ Table of Contents:
 	'use strict';
 	/* 1. Windows on Load
 	====================*/
-	$(window).on('load', function() {
-		$('.loader').delay(2500).fadeOut('slow');
-		var $grid = $('.grid').masonry({
-			itemSelector: '.grid-item',
-			percentPosition: true,
-			columnWidth: '.grid-sizer'
-		});
-	});
+	//$(window).on('load', function() {
+	//	$('.loader').delay(2500).fadeOut('slow');
+	//	var $grid = $('.grid').masonry({
+	//		itemSelector: '.grid-item',
+	//		percentPosition: true,
+	//		columnWidth: '.grid-sizer'
+	//	});
+	//});
 
 	/* 2. Windows on Scroll
 	====================*/
