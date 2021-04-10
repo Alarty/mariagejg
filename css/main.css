@@ -27,13 +27,26 @@ Table of Contents:
 	font-style: normal;
 }
 
+@font-face {
+	font-family: 'Amsterdam';
+	src: url("../fonts/Amsterdam.otf");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Yessy';
+	src: url("../fonts/Yessy.otf");
+	font-weight: normal;
+	font-style: normal;
+}
 
 /*!
 1. Base
 ================*/
 /* Fonts */
 .title {
-	font-family: "laug";
+	font-family: "Playlist";
 	font-size: 36px;
 	position: relative;
 	display: inline-block;
@@ -42,7 +55,7 @@ Table of Contents:
 
 @media only screen and (min-width: 768px) {
 	.title {
-		font-size: 44px;
+		font-size: 55px;
 	}
 }
 
@@ -59,7 +72,7 @@ Table of Contents:
 }
 
 .title--special {
-	font-family: "laug";
+	font-family: "Playlist";
 	line-height: 1.2;
 	margin-bottom: 50px;
 }
@@ -1022,7 +1035,7 @@ input.search-field {
 }
 
 .section--blue {
-	background: rgba(0, 86, 77, 0.5);
+	background: #116160;
 }
 
 .main-hero {
@@ -1043,23 +1056,11 @@ input.search-field {
 }
 
 @media only screen and (min-width: 768px) {
-	.love-story:before {
-		content: '';
-		position: absolute;
-		display: block;
-		width: 143px;
-		height: 186px;
-		background: url(../img/ls-flower.png) no-repeat;
-	}
-	.love-story p {
-		width: 70%;
-	}
+
 }
 
 @media only screen and (min-width: 992px) {
-	.love-story p {
-		width: 50%;
-	}
+
 }
 
 .love-story__flower-parallax {
@@ -1106,7 +1107,7 @@ input.search-field {
 }
 
 .date-section__block .title--special {
-	font-size: 40px;
+	font-size: 100px;
 	line-height: 40px;
 	margin-bottom: 30px;
 }
@@ -1117,19 +1118,32 @@ input.search-field {
 }
 
 .date-section__place {
-	font-family: "Playfair Display", serif;
-	font-size: 25px;
-	margin-bottom: 40px;
+	font-family: "Amsterdam";
+	font-size: 30px;
+	line-height: 3em;
 }
 
 .timer-item {
+	font-family: "Playlist";
+	font-size: 20px;
 	padding: 0 10px;
+}
+
+@media only screen and (max-width: 768px) {
+	.date-section__block .title--special {
+		font-size: 15vw;
+	}
+		.date-section__place {
+		font-size: 4vw;
+	}
 }
 
 @media only screen and (min-width: 768px) {
 	.timer-item {
 		padding: 0 30px;
 	}
+
+
 }
 
 .timer__digit {
@@ -1145,7 +1159,6 @@ input.search-field {
 }
 
 .timer__text {
-	font-size: 14px;
 	text-transform: capitalize;
 }
 
@@ -1494,8 +1507,33 @@ footer:before {
 	position: absolute;
     margin-left: auto;
     margin-right: auto;
-    top: 95%;
+    top: 100%;
     bottom: 0;
     left: 0;
     right: 0;
+    height: 110%;
+}
+
+.yessy_font{
+	font-family: "Yessy";
+}
+
+.playlist_font{
+	font-family: "Playlist";
+}
+
+.amsterdam_font{
+	font-family: "Amsterdam";
+}
+
+
+.content_text{
+	font-family: "Yessy";
+	font-size: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+	.content_text {
+		font-size: 36px;
+	}
 }
