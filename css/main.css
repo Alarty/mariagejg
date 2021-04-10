@@ -20,6 +20,14 @@ Table of Contents:
 	font-style: normal;
 }
 
+@font-face {
+	font-family: 'Playlist';
+	src: url("../fonts/Playlist_script.otf");
+	font-weight: normal;
+	font-style: normal;
+}
+
+
 /*!
 1. Base
 ================*/
@@ -97,7 +105,7 @@ a {
 }
 
 a:hover, a:active, a:focus {
-	/*color: #eab96a;*/
+	color: #b95428;
 	outline: none;
 	text-decoration: none;
 }
@@ -200,7 +208,7 @@ a {
 }
 
 a:hover {
-	color: #eab96a;
+	color: #b95428;
 }
 
 /*!
@@ -402,7 +410,7 @@ a:hover {
 }
 
 .card-body a:hover {
-	color: #eab96a;
+	color: #b95428;
 }
 
 .card-image {
@@ -650,6 +658,8 @@ input.search-field {
 
 .navbar {
 	background-color: rgba(0, 0, 0, 0.75);
+	font-family: "Playlist";
+	font-size: large;
 }
 
 @media only screen and (min-width: 992px) {
@@ -703,7 +713,6 @@ input.search-field {
 .nav-link {
 	text-transform: uppercase;
 	position: relative;
-	font-size: 0.75rem;
 	font-weight: 600;
 	color: #fff;
 }
@@ -721,14 +730,14 @@ input.search-field {
 }
 
 .nav-link.active, .nav-link:hover {
-	color: #CE7300;
+	color: #b95428;
 }
 
 .nav-link.active:before, .nav-link:hover:before {
 	content: '';
 	width: 70%;
 	height: 3px;
-	background: #CE7300;
+	background: #b95428;
 	display: block;
 	position: absolute;
 	bottom: -2px;
@@ -798,7 +807,7 @@ input.search-field {
 }
 
 .navbar-brand__img {
-	max-height: 3.75rem;
+	max-height: 4.75rem;
 	position: relative;
 	transition: all 0.5s ease;
 	top: 0;
@@ -806,7 +815,7 @@ input.search-field {
 
 @media only screen and (min-width: 992px) {
 	.navbar-brand__img {
-		max-height: 8.75rem;
+		max-height: 9.75rem;
 	}
 }
 
@@ -903,7 +912,7 @@ input.search-field {
 }
 
 .dropdown-menu .dropdown-item:hover {
-	color: #eab96a;
+	color: #b95428;
 	background: none;
 }
 
@@ -987,7 +996,7 @@ input.search-field {
 }
 
 .widget_calendar table a {
-	color: #eab96a;
+	color: #b95428;
 }
 
 .widget_calendar table a:hover {
