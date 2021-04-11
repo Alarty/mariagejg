@@ -503,7 +503,6 @@ a:hover {
 
 .form-group .control-label {
 	padding: 0;
-	line-height: 1;
 	position: absolute;
 	top: 10px;
 	left: 12px;
@@ -1291,7 +1290,6 @@ input.search-field {
 }
 
 .rsvp .title {
-	font-family: "Playfair Display", serif;
 	display: block;
 }
 
