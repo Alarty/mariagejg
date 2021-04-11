@@ -232,13 +232,7 @@ Table of Contents:
 		});
 	}
 	function checkVal(inputField) {
-		if (inputField.val() === '') {
-			if (event.type === "focus") {
-				inputField.prev('.control-label').addClass('filled')
-			} else if (event.type === "blur") {
-				inputField.prev('.control-label').removeClass('filled')
-			}
-		}
+
 	}
 	function submitForm() {
 		var $form = $('#rsvp-form');
@@ -248,12 +242,13 @@ Table of Contents:
 			var formData = {
 				'answer': $form.find('input[name="answer"]:checked').val(),
 				'name': $form.find('input#inputName').val(),
-				'with': $form.find('input#inputWith').val(),
+				'nbAdult': $form.find('input#inputAdult').val(),
+				'nbChild': $form.find('input#inputChild').val(),
 				'email': $form.find('input#inputEmail').val(),
 				'content': $form.find('input#inputContent').val()
 			};
 			$.ajax({
-			    url: "https://formspree.io/xgepyywo",
+			    url: "https://formspree.io/xbjqjblq",
 				method: 'POST',
 				data: formData,
 				dataType: 'json',
@@ -262,7 +257,7 @@ Table of Contents:
 					$('.success-msg').html('Message envoyé, merci !');
 				},
 				error: function(err) {
-					$('#inputName').addClass('error').after('<span class="error-msg">Erreur dans le formulaire ou côté serveur, désolé '+err+'</span>');
+					$('#inputName').addClass('error').after('<span class="error-msg">Erreur dans le formulaire ou côté serveur, désolé envoyez un message via un autre canal : '+err+'</span>');
 				}
 			});
 			e.preventDefault();
