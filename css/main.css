@@ -525,8 +525,8 @@ a:hover {
 	top: 0;
 	padding-top: 40px;
 	position: absolute;
-	font-size: 24px;
-	font-family: "Playfair Display", serif;
+	font-size: 30px;
+	font-family: "Playlist";
 }
 
 input.search-field {
