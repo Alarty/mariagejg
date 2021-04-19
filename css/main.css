@@ -41,6 +41,13 @@ Table of Contents:
 	font-style: normal;
 }
 
+@font-face {
+	font-family: 'Cafe';
+	src: url("../fonts/cafe_brewery.ttf");
+	font-weight: normal;
+	font-style: normal;
+}
+
 /*!
 1. Base
 ================*/
@@ -227,6 +234,8 @@ a:hover {
 .accordion__body {
 	overflow: hidden;
 	padding: 70px 0;
+	font-family: "Cafe";
+	font-size: 1.5em;
 }
 
 .accordion__body .row {
@@ -269,25 +278,24 @@ a:hover {
 	left: 50%;
 	-ms-transform: translateX(-50%);
 	transform: translateX(-50%);
-	font-family: "Amsterdam";
+	font-family: "Playlist";
 	font-size: 25px;
 	line-height: 120px;
 	color: #ddd;
-	text-transform: uppercase;
 	opacity: 0.7;
 	z-index: -1;
 }
 
 @media only screen and (min-width: 768px) {
 	.accordion__item-heading {
-		font-size: 35px;
+		font-size: 105px;
 		top: -50px;
 	}
 }
 
 @media only screen and (min-width: 1200px) {
 	.accordion__item-heading {
-		font-size: 55px;
+		font-size: 185px;
 	}
 }
 
@@ -1572,4 +1580,21 @@ footer:before {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.accordion__item-subheading{
+	font-size: 2.5em;
+}
+
+#rsvp-form{
+	font-family: "Cafe";
+	font-size: 1.5em;
+}
+
+.form-sub {
+	font-size: 1.5em;
+}
+
+.not-centered {
+	text-align: initial;
 }
