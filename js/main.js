@@ -248,7 +248,7 @@ Table of Contents:
 				'content': $form.find('input#inputContent').val()
 			};
 			$.ajax({
-			    url: "https://formspree.io/xbjqjblq",
+			    url: "https://formspree.io/xvodgbar",
 				method: 'POST',
 				data: formData,
 				dataType: 'json',
