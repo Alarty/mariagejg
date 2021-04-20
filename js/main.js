@@ -257,7 +257,7 @@ Table of Contents:
 					$('.success-msg').html('Message envoyé, merci !');
 				},
 				error: function(err) {
-					$('#inputName').addClass('error').after('<span class="error-msg">Erreur dans le formulaire ou côté serveur, désolé envoyez un message via un autre canal : '+err+'</span>');
+					$('#inputName').addClass('error').after('<span class="error-msg">Erreur dans le formulaire ou côté serveur, désolé. Rechargez la page ou envoyez un mail à guillaume.juline@gmail.com</span>');
 				}
 			});
 			e.preventDefault();
